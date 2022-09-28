@@ -1,5 +1,5 @@
 /**
- * Schema for course
+ * Schema for Food
  */
 import { Schema, model } from "mongoose";
 

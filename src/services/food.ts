@@ -1,7 +1,12 @@
+/**
+ * Methods for popular food and reservation center APIs
+ */
+
 import FoodModel from "../model/foodSchema";
 import ReservationCenterModel from "../model/reservationCenterSchema";
 import { FoodType, ReservationCenterType } from "./types";
 
+//function to get the popular food based on location
 export async function getPopularFood(location: string) {
   const food = await FoodModel.find({
     location: location.toLowerCase(),
@@ -26,6 +31,7 @@ export async function getPopularFood(location: string) {
   return finalFood;
 }
 
+//function to get the reservation center
 export async function getReservationCentres() {
   const reservation = await ReservationCenterModel.find();
   const finalReservation: Array<

@@ -1,7 +1,6 @@
 /**
  * types
  */
-
 export interface FoodType {
   name: string;
   description: string;

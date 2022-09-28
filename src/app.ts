@@ -1,3 +1,7 @@
+/**
+ * Starts the  api services
+ */
+
 import express from "express";
 import router from "./routes";
 import cors from "cors";

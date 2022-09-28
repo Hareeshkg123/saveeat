@@ -1,3 +1,6 @@
+/**
+ * Router which inturn routes to specific routes
+ */
 import express from "express";
 
 import createError from "http-errors";

@@ -1,7 +1,11 @@
+/**
+ * Controller for popular food and reservation center APIs
+ */
+
 import { Request, Response, NextFunction } from "express";
 import { getPopularFood, getReservationCentres } from "../services/food";
 
-// add course
+//get popular food
 export const getFood = async (
   req: Request,
   res: Response,
@@ -18,6 +22,7 @@ export const getFood = async (
   }
 };
 
+// get reservation center
 export const getReservation = async (
   req: Request,
   res: Response,

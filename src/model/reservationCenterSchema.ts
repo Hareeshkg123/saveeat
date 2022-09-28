@@ -1,5 +1,5 @@
 /**
- * Schema for employee
+ * Schema for reservation center
  */
 import { Schema, model } from "mongoose";
 
